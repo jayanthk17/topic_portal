@@ -1,0 +1,78 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Registered Groups | Project Topic Portal</title>
+
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="wrap nav">
+
+      <strong>🎓 Project Topic Portal</strong>
+
+      <nav class="top-links">
+        <a href="/registered-groups" aria-current="page">
+          Registered Groups
+        </a>
+
+        <a href="/student/login">
+          Student Login
+        </a>
+
+        <a href="/admin">
+          Admin Login
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <div class="hero">
+      <span class="eyebrow">
+        PUBLIC REGISTRATION LIST
+      </span>
+
+      <h1>Registered groups</h1>
+
+      <p>
+        See which project topics have been booked,
+        by whom, and the registration date and time (IST).
+      </p>
+    </div>
+
+    <section class="panel">
+
+      <div class="member-heading">
+        <h2>Completed registrations</h2>
+        <span id="count" class="hint"></span>
+      </div>
+
+      <p id="status" role="status" class="hint">
+        Loading registrations...
+      </p>
+
+      <div id="publicRegistrations" class="records"></div>
+
+    </section>
+
+    <p class="foot">
+      This page is public. Names, selected topics and
+      registration times are visible to everyone.
+      Refreshes every 15 seconds.
+    </p>
+
+  </main>
+
+  <script src="/static/registered_groups.js"></script>
+
+</body>
+</html>
